@@ -1,4 +1,4 @@
-package gdx.example.template;
+package your.group.here; //// CHANGE THIS
 
 import com.badlogic.gdx.ApplicationAdapter;
 import com.badlogic.gdx.Gdx;
@@ -14,15 +14,15 @@ public class Main extends ApplicationAdapter {
 	@Override
 	public void create() {
 		batch = new SpriteBatch();
-		image = new Texture("badlogic.png");
+		image = new Texture("libgdx.png");
 	}
 
 	@Override
 	public void render() {
-		Gdx.gl.glClearColor(1, 1, 1, 1);
+		Gdx.gl.glClearColor(0.15f, 0.15f, 0.2f, 1f);
 		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
 		batch.begin();
-		batch.draw(image, 165, 180);
+		batch.draw(image, 140, 210);
 		batch.end();
 	}
 
